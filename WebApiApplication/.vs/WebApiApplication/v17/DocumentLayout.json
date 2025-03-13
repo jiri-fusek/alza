@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Work\\Alza\\WebApiApplication\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DA78DE9E-E4C4-42C5-B751-C01B6720301E}|Core\\Core.csproj|c:\\work\\alza\\webapiapplication\\core\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA78DE9E-E4C4-42C5-B751-C01B6720301E}|Core\\Core.csproj|solutionrelative:core\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DA78DE9E-E4C4-42C5-B751-C01B6720301E}|Core\\Core.csproj|c:\\work\\alza\\webapiapplication\\core\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA78DE9E-E4C4-42C5-B751-C01B6720301E}|Core\\Core.csproj|solutionrelative:core\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,19 +47,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Work\\Alza\\WebApiApplication\\Core\\Interfaces\\IProductService.cs",
+              "RelativeDocumentMoniker": "Core\\Interfaces\\IProductService.cs",
+              "ToolTip": "C:\\Work\\Alza\\WebApiApplication\\Core\\Interfaces\\IProductService.cs",
+              "RelativeToolTip": "Core\\Interfaces\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T20:30:59.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "IProductRepository.cs",
               "DocumentMoniker": "C:\\Work\\Alza\\WebApiApplication\\Core\\Interfaces\\IProductRepository.cs",
               "RelativeDocumentMoniker": "Core\\Interfaces\\IProductRepository.cs",
               "ToolTip": "C:\\Work\\Alza\\WebApiApplication\\Core\\Interfaces\\IProductRepository.cs",
               "RelativeToolTip": "Core\\Interfaces\\IProductRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T20:29:35.401Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProductDto.cs",
               "DocumentMoniker": "C:\\Work\\Alza\\WebApiApplication\\Core\\DTOs\\ProductDto.cs",
               "RelativeDocumentMoniker": "Core\\DTOs\\ProductDto.cs",
