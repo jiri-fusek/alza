@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Work\\Alza\\WebApiApplication\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA78DE9E-E4C4-42C5-B751-C01B6720301E}|Core\\Core.csproj|c:\\work\\alza\\webapiapplication\\core\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA78DE9E-E4C4-42C5-B751-C01B6720301E}|Core\\Core.csproj|solutionrelative:core\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +35,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "C:\\Work\\Alza\\WebApiApplication\\Core\\DTOs\\ProductDto.cs",
+              "RelativeDocumentMoniker": "Core\\DTOs\\ProductDto.cs",
+              "ToolTip": "C:\\Work\\Alza\\WebApiApplication\\Core\\DTOs\\ProductDto.cs",
+              "RelativeToolTip": "Core\\DTOs\\ProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T20:28:11.981Z",
+              "EditorCaption": ""
             }
           ]
         }
