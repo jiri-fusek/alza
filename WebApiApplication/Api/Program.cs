@@ -41,8 +41,13 @@ builder.Services.AddSwaggerGen(options =>
         Description = "A REST API for managing e-shop products"
     });
 
-    // Include XML comments
-    // Enable XML comments for controllers
+    options.SwaggerDoc("v2", new OpenApiInfo
+    {
+        Title = "Products API",
+        Version = "v2",
+        Description = "A REST API for managing e-shop products with pagination support"
+    });
+
     var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     options.IncludeXmlComments(xmlPath);
@@ -57,6 +62,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(options =>
     {
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "EShop Products API v1");
+        options.SwaggerEndpoint("/swagger/v2/swagger.json", "EShop Products API v2");
     });
 
     // Create database if it doesn't exist
