@@ -1,4 +1,5 @@
-﻿using Core.Entities;
+﻿using Core.DTOs;
+using Core.Entities;
 using Core.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,25 @@ namespace Tests.Mocks
         public Task<IEnumerable<Product>> GetAllProductsAsync()
         {
             return Task.FromResult<IEnumerable<Product>>(_products);
+        }
+
+        public Task<PaginatedResult<Product>> GetPaginatedProductsAsync(int pageNumber, int pageSize)
+        {
+            var totalCount = _products.Count;
+            var items = _products
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            var result = new PaginatedResult<Product>
+            {
+                Items = items,
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                TotalCount = totalCount
+            };
+
+            return Task.FromResult(result);
         }
 
         public Task<Product?> GetProductByIdAsync(int id)

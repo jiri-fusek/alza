@@ -1,4 +1,5 @@
-﻿using Core.Entities;
+﻿using Core.DTOs;
+using Core.Entities;
 using Core.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -21,6 +22,24 @@ namespace Infrastructure.Data
         public async Task<IEnumerable<Product>> GetAllProductsAsync()
         {
             return await _context.Products.ToListAsync();
+        }
+
+        public async Task<PaginatedResult<Product>> GetPaginatedProductsAsync(int pageNumber, int pageSize)
+        {
+            var totalCount = await _context.Products.CountAsync();
+
+            var items = await _context.Products
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            return new PaginatedResult<Product>
+            {
+                Items = items,
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                TotalCount = totalCount
+            };
         }
 
         public async Task<Product?> GetProductByIdAsync(int id)

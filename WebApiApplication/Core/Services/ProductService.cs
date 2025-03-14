@@ -24,6 +24,21 @@ namespace Core.Services
             return products.Select(MapToDto);
         }
 
+        public async Task<PaginatedResult<ProductDto>> GetPaginatedProductsAsync(int pageNumber, int pageSize)
+        {
+            var paginatedResult = await _productRepository.GetPaginatedProductsAsync(pageNumber, pageSize);
+
+            var result = new PaginatedResult<ProductDto>
+            {
+                PageNumber = paginatedResult.PageNumber,
+                PageSize = paginatedResult.PageSize,
+                TotalCount = paginatedResult.TotalCount,
+                Items = paginatedResult.Items.Select(MapToDto).ToList()
+            };
+
+            return result;
+        }
+
         public async Task<ProductDto?> GetProductByIdAsync(int id)
         {
             var product = await _productRepository.GetProductByIdAsync(id);
