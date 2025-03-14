@@ -36,7 +36,7 @@ builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "EShop Products API",
+        Title = "Products API",
         Version = "v1",
         Description = "A REST API for managing e-shop products"
     });
@@ -48,16 +48,7 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(xmlPath);
 });
 
-
-
 var app = builder.Build();
-
-// Complete the Program.cs file
-app.UseHttpsRedirection();
-app.UseAuthorization();
-app.MapControllers();
-
-app.Run();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -90,3 +81,8 @@ if (app.Environment.IsDevelopment())
         }
     }
 }
+
+//app.UseHttpsRedirection(); Do not use HTTPS for this demo
+app.UseAuthorization();
+app.MapControllers();
+app.Run();

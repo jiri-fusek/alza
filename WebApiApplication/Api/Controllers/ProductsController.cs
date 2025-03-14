@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
+    /// <summary>
+    /// Controller for managing e-shop products
+    /// </summary>
     [ApiController]
     [Route("api/[controller]")]
     [Produces("application/json")]
@@ -11,6 +14,10 @@ namespace Api.Controllers
     {
         private readonly IProductService _productService;
 
+        /// <summary>
+        /// Initializes a new instance of the ProductsController
+        /// </summary>
+        /// <param name="productService">The product service</param>
         public ProductsController(IProductService productService)
         {
             _productService = productService;
