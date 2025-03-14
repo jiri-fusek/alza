@@ -1,11 +1,11 @@
-using Microsoft.AspNetCore.Mvc.Versioning;
 using Core.Interfaces;
 using Core.Services;
 using Infrastructure.Data;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
-using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 

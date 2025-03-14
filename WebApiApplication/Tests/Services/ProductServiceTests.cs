@@ -1,10 +1,5 @@
 ﻿using Core.DTOs;
 using Core.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Tests.Mocks;
 using Xunit;
 
