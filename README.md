@@ -44,7 +44,7 @@ The solution follows Clean Architecture principles and is structured into the fo
 
 ```bash
 git clone https://github.com/jiri-fusek/alza
-cd eshop-products-api
+cd WebApiApplication
 ```
 
 ### Build the Solution
