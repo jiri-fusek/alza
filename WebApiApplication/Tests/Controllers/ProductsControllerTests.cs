@@ -3,7 +3,6 @@ using Core.DTOs;
 using Core.Services;
 using Microsoft.AspNetCore.Mvc;
 using Tests.Mocks;
-using Xunit;
 
 namespace Tests.Controllers
 {

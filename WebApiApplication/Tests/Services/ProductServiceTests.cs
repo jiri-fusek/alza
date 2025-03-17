@@ -1,7 +1,6 @@
 ﻿using Core.DTOs;
 using Core.Services;
 using Tests.Mocks;
-using Xunit;
 
 namespace Tests.Services
 {
